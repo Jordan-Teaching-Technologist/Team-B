@@ -288,7 +288,7 @@ namespace StarterAssets
                 if (Stamina <= 0)
                 {
                     Stamina = 0;
-                    canSprint = false; // 体力耗尽，不能再奔跑
+                    canSprint = false;
                 }
             }
 

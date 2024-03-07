@@ -8,7 +8,7 @@ public class FlameThrowerMusic : MonoBehaviour
     public AudioClip introClip; 
     public AudioClip loopClip; 
 
-    void Start()
+    void Awake()
     {
         audioSource.clip = introClip;
         audioSource.Play();

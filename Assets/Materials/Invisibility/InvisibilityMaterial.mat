@@ -40,10 +40,10 @@ Material:
     - _BrilhoSpec: 0.86
     - _Diferenca: 0
     - _Dx: 0
-    - _Dy: 0.03
+    - _Dy: 0
     - _Forca: 0
     - _Glossiness: 0.5
-    - _Largura: 77
+    - _Largura: 100
     - _Metallic: 0
     - _TipoAlpha: 1
     - _TipoI: 1

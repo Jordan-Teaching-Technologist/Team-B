@@ -79,7 +79,7 @@
 	void surf(Input IN, inout SurfaceOutput o) {
 		
 		float2 screenUV = IN.screenPos.xy / IN.screenPos.w;
-		screenUV.y = 1 - screenUV.y - _Dy;
+		// screenUV.y = 1 - screenUV.y - _Dy;
 		screenUV.x = screenUV.x - _Dx;
 		o.Normal = UnpackNormal(tex2D(_MainTex, screenUV - _Time.x * _Velocidade));
 		if (dot(o.Normal, IN.viewDir) < _Animacao) {
