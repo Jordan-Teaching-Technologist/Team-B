@@ -77,7 +77,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2877823306056859631}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Left Elbow IK Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6902584447961206234}
   - component: {fileID: 2427267640773254155}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 6423755837521611319}
   - component: {fileID: 1146180887455900457}
   - component: {fileID: 8931345978863832324}
-  m_Layer: 3
+  m_Layer: 14
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -723,7 +723,7 @@ GameObject:
   - component: {fileID: 2506379521729966861}
   - component: {fileID: 8759902255150766872}
   - component: {fileID: 637703051623679686}
-  m_Layer: 3
+  m_Layer: 14
   m_Name: PlayerFollowCamera
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1032,7 +1032,7 @@ GameObject:
   - component: {fileID: 6148418081035859402}
   - component: {fileID: 4628104716217491205}
   - component: {fileID: 997747643482378332}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Attack Radius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1131,7 +1131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5332582681040134429}
   - component: {fileID: 3295928753244428398}
-  m_Layer: 3
+  m_Layer: 14
   m_Name: Armature_Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1200,7 +1200,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4698152120088058464, guid: 36078ab0369161e49a29d349ae3e0739, type: 3}
+  m_Mesh: {fileID: 4698152120088058464, guid: c9b430f81fcaf42f6911dd3611a6ef92, type: 3}
   m_Bones:
   - {fileID: 5979054418261747645}
   - {fileID: 8565401062263968446}
@@ -1319,7 +1319,7 @@ GameObject:
   - component: {fileID: 8065156814232503359}
   - component: {fileID: 2941798427124946594}
   - component: {fileID: 5761697000998967960}
-  m_Layer: 3
+  m_Layer: 14
   m_Name: Crosshair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1423,7 +1423,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7770985878490766762}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Right Hand IK Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1550,7 +1550,7 @@ GameObject:
   - component: {fileID: 7788582013668502964}
   - component: {fileID: 8550028148845355515}
   - component: {fileID: 4289350412047816395}
-  m_Layer: 3
+  m_Layer: 14
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1900,7 +1900,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8501355389511192266}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Right Elbow IK Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2059,7 +2059,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4012368057150038986}
-  m_Layer: 3
+  m_Layer: 14
   m_Name: SpawnBulletPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2602,7 +2602,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2826442455633746438}
-  m_Layer: 3
+  m_Layer: 14
   m_Name: Geometry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2637,7 +2637,7 @@ GameObject:
   - component: {fileID: 2258315242870082078}
   - component: {fileID: 8682042051125436445}
   - component: {fileID: 6379727882409535040}
-  m_Layer: 3
+  m_Layer: 14
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2807,7 +2807,7 @@ GameObject:
   - component: {fileID: 8673831570351199755}
   - component: {fileID: 6324479511257346980}
   - component: {fileID: 7277470874146205161}
-  m_Layer: 3
+  m_Layer: 14
   m_Name: MainCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -3071,7 +3071,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8796859250806582004}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Left Hand IK Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3134,7 +3134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7001180953553215242}
   - component: {fileID: 4714731252238954804}
-  m_Layer: 3
+  m_Layer: 14
   m_Name: AimCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3214,7 +3214,7 @@ GameObject:
   - component: {fileID: 2898497447665799658}
   - component: {fileID: 1674636136170161686}
   - component: {fileID: 9178090444200774097}
-  m_Layer: 3
+  m_Layer: 14
   m_Name: Human
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -3801,6 +3801,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flamethrower
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e4b2c111c79c242b39a883179e2e0684,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -4004,8 +4009,20 @@ PrefabInstance:
       value: FlameThrower
       objectReference: {fileID: 0}
     - target: {fileID: 1634767862067424, guid: 007c57e2df8e9b144b99f471b84f3d56, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634767862067424, guid: 007c57e2df8e9b144b99f471b84f3d56, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685911702664702, guid: 007c57e2df8e9b144b99f471b84f3d56, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819868529388052, guid: 007c57e2df8e9b144b99f471b84f3d56, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1819868529388052, guid: 007c57e2df8e9b144b99f471b84f3d56, type: 3}
       propertyPath: m_IsActive
@@ -4180,6 +4197,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 199982541912562440, guid: 007c57e2df8e9b144b99f471b84f3d56,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3349fc02d104e2b458470ec533f51c16, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

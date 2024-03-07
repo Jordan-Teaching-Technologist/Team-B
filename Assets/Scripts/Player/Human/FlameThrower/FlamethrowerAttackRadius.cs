@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class FlamethrowerAttackRadius : MonoBehaviourPun
 {
-    
-    
     private void OnTriggerEnter(Collider other)
     {
         ProcessTriggerEvent(other);
