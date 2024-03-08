@@ -1,14 +1,15 @@
-using System;
+﻿using System;
 using Photon.Pun.UtilityScripts;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-public class FightUI1 : MonoBehaviour
+
+public class FightUI2 : MonoBehaviour
 {
-    public static FightUI1 Instance { get; private set; }
     // public Image StaminaBar; // 确保在Unity编辑器中已经设置了这个引用
+    public static FightUI2 Instance { get; private set; }
     //private GameManager gameManager;
     private Text countdownText;
     private Image Skill_Icon;
@@ -21,17 +22,18 @@ public class FightUI1 : MonoBehaviour
         iscount = true;
         countdownText = transform.Find("CountdownText").GetComponent<Text>();
         
-        Transform Invisible = transform.Find("Invisible Effect");
-        Invisible.gameObject.SetActive(true);
-        if (Invisible != null && Invisible.childCount > 0) {
+        Transform Clone = transform.Find("Clone Skills");
+        Clone.gameObject.SetActive(true);
+        if (Clone != null && Clone.childCount > 0) {
             // 假设hp下只有一个子对象，直接获取第一个子对象
-            Transform firstChild = Invisible.GetChild(0);
+            Transform firstChild = Clone.GetChild(0);
             Image image = firstChild.GetComponent<Image>();
             if (image != null) {
                 // 成功找到了Image组件
                 Skill_Icon = image;
             }
         }
+        
         
         //--------------------------
         // top left placeholder components
@@ -40,6 +42,7 @@ public class FightUI1 : MonoBehaviour
         //--------------------------
 
     }
+    
     void Awake()
     {
         if (Instance != null && Instance != this)

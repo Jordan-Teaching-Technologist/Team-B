@@ -22,6 +22,8 @@ public class FightManager : MonoBehaviourPunCallbacks
 
     private FightUI fightUI;
     private FightUI1 fightUI1;
+    private FightUI2 fightUI2;
+    private FightUI3 fightUI3;
     public static float countdownTimer = 180f;
     private bool _isHumanWin;
     private int humanPlayerActorNumber;
@@ -60,15 +62,11 @@ public class FightManager : MonoBehaviourPunCallbacks
 
         if (playerType == "Human")
         {
-            fightUI = Game.uiManager.ShowUI<FightUI>("FightUI");
+            fightUI = Game.uiManager.ShowUI<FightUI>("Human_FightUI");
         }
         else if (playerType == "Cheese")
         {
-            fightUI1 = Game.uiManager.ShowUI<FightUI1>("FightUI 1");
-        }
-        else
-        {
-            Debug.LogError("Unknown player type: " + playerType);
+            fightUI3 = Game.uiManager.ShowUI<FightUI3>("Cheese_FightUI");
         }
     }
 
@@ -166,7 +164,10 @@ public class FightManager : MonoBehaviourPunCallbacks
             {
                 // 如果是房主，更新倒计时并发送 RPC
                 float newTimer = UpdateCountdownTimer();
+                fightUI.SetCountdownTimer(newTimer);
                 fightUI1.SetCountdownTimer(newTimer);
+                fightUI2.SetCountdownTimer(newTimer);
+                fightUI3.SetCountdownTimer(newTimer);
                 photonView.RPC("UpdateCountdownTimerRPC", RpcTarget.Others, newTimer);
             }
         }
@@ -202,7 +203,10 @@ public class FightManager : MonoBehaviourPunCallbacks
     private void UpdateCountdownTimerRPC(float newTimer)
     {
         // 在所有客户端上同步倒计时
+        fightUI.SetCountdownTimer(newTimer);
         fightUI1.SetCountdownTimer(newTimer);
+        fightUI2.SetCountdownTimer(newTimer);
+        fightUI3.SetCountdownTimer(newTimer);
     }
 
     

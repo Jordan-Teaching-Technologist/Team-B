@@ -5,8 +5,12 @@ using UnityEngine;
 public class EnemyDetector : MonoBehaviour
 {
     public Material outlineMaterial; 
+    public float cooldownTime = 30f;
     private bool isDetecting = false; 
     private bool isCooldown = false;
+    private float skillIconFill;
+    private float nextAvailableTime;
+    
 
     void Update()
     {
@@ -14,7 +18,20 @@ public class EnemyDetector : MonoBehaviour
         {
             Debug.Log("R is pressed");
             StartCoroutine(DetectEnemies());
-            StartCoroutine(Cooldown());
+            StartCooldown();
+        }
+        if (isCooldown)
+        {
+            skillIconFill = (nextAvailableTime - Time.time) / cooldownTime;
+            skillIconFill = Mathf.Clamp(skillIconFill, 0f, 1f); // 确保在0和1之间
+            UpdateIcon();
+            
+            if (Time.time >= nextAvailableTime)
+            {
+                isCooldown = false;
+                skillIconFill = 0f;
+                UpdateIcon(); 
+            }
         }
     }
 
@@ -50,10 +67,19 @@ public class EnemyDetector : MonoBehaviour
         }
     }
 
-    IEnumerator Cooldown()
+    void StartCooldown()
     {
         isCooldown = true;
-        yield return new WaitForSeconds(30);
-        isCooldown = false;
+        nextAvailableTime = Time.time + cooldownTime;
+        skillIconFill = 1f;
+        UpdateIcon();
+    }
+    
+    private void UpdateIcon()
+    {
+        if (FightUI3.Instance != null)
+        {
+            FightUI3.Instance.UpdateSkill_Icon(skillIconFill);
+        } 
     }
 }

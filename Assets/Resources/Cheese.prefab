@@ -606,6 +606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMaterial: {fileID: 2100000, guid: acd8f714506fd6540a36a074eb7f1491, type: 2}
+  cooldownTime: 30
 --- !u!4 &2072448746763765294 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 76b1db43dfbc346c5b159481488ae965,
